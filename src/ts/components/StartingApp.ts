@@ -16,7 +16,8 @@ export default class CatalogApp {
     products = [new Product("jablko", '123', "do jedzenia", this.link +'1'),
         new Product("ananas", '233', "do fd jedzenia", this.link + '2'),
         new Product("winogrona", '500', "do df jedzenia", this.link + '3'),
-        new Product("gruszka", '100', "taka tam", this.link + '4')];
+        new Product("gruszka", '100', "taka tam", this.link + '4'),
+        new Product("wisnia", '1000', 'taki tam owoc', this.link + '5')];
 
     sort($event) {
         if($event == "names") {

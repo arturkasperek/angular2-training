@@ -1,16 +1,26 @@
 /// <reference path="../../../typings/tsd.d.ts" />
 
-import {Component, View} from 'angular2/angular2';
+import {Component, View, NgIf} from 'angular2/angular2';
 
 @Component({
     inputs: ['product'],
     selector: 'product'
 })
 @View({
-    templateUrl: 'src/template/Product.html'
+    templateUrl: 'src/template/Product.html',
+    directives: [NgIf]
 })
 export class ProductComponent {
     public product: Product;
+    public hideFlag: Boolean;
+
+    constructor() {
+        this.hideFlag = true;
+    }
+
+    hide() {
+
+    }
 }
 
 export class Product {

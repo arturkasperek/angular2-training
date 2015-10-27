@@ -1,0 +1,8 @@
+<div>
+    <sort-btn (clicked)="sort($event)"></sort-btn></br>
+    <input (keyup)="filtr($event)">
+</div>
+
+<div class="products-list">
+    <product *ng-for="#product of products" [product]="product"></product>
+</div>
